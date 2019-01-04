@@ -1,0 +1,21 @@
+<div class="Main_container">
+  <div class="Form_container">
+    
+    <%= form_for :search, method: :get do |f| %>
+      <h3>
+        <%= f.label :flickr_user_id, "Flickr user ID" %>
+        <%= f.text_field :flickr_user_id, placeholder: "166884836@N06" %>
+      </h3>
+      <%= f.submit "SEARCH" %>
+    <% end %>
+  </div> <!-- end of form_container -->
+  
+  <% @pictures.each do |pic| %>
+    <div class="column">
+      <div class="row">
+      <%= image_tag(pic.url_m) %>
+      </div><!-- end of row -->
+    </div> <!-- end of column -->
+  <% end %>
+
+</div> <!-- end of main_container -->

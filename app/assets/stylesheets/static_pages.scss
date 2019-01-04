@@ -1,0 +1,30 @@
+.Main_container {
+  text-align: center;
+}
+
+.Form_container {
+  margin-bottom: 10px;
+}
+
+.Flash {
+  background-color: pink;
+  text-align: center;
+  font-size: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
